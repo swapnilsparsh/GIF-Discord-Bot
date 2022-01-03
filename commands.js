@@ -6,7 +6,7 @@ const gif = require("./commands/gif.js");
 const commands = { hello, gif };
 
 module.exports = async function (msg) {
-  if (msg.channel.id == "926231447990308875") {
+  if (msg.channel.id == process.env.CHANNELTOKEN) {
     //Checks and make sure if it is a valid message
     let tokens = msg.content.split(" ");
     let command = tokens.shift();
