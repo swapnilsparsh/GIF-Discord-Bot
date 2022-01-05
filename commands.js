@@ -6,7 +6,8 @@ const gif = require("./commands/gif.js");
 const commands = { hello, gif };
 
 module.exports = async function (msg) {
-  if (msg.channel.id == process.env.CHANNELTOKEN) {
+  // For restricting the bot in a particular channel
+  if (msg.channel.id == process.env.CHANNEL_TOKEN) {
     //Checks and make sure if it is a valid message
     let tokens = msg.content.split(" ");
     let command = tokens.shift();
