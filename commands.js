@@ -1,9 +1,8 @@
 //Import other JS Files
-const hello = require("./commands/hello.js");
 const gif = require("./commands/gif.js");
 
 //Store it in objects
-const commands = { hello, gif };
+const commands = { gif };
 
 module.exports = async function (msg) {
   // For restricting the bot in a particular channel
