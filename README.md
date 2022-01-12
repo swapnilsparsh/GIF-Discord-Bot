@@ -1,35 +1,28 @@
-# GIF-Discord-Bot [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# GIF-Discord-Bot
 
-## Store token and other secrets in .env file.
+A simple discord bot that helps you send gif in your server using command `!gif cat`.
 
-1. Install [dotenv package](https://www.npmjs.com/package/dotenv).
+## Requirements
+
+- [Node](https://nodejs.org/en/)
+- [NPM](https://www.npmjs.com/)
+
+## Getting started
+
+First, make sure you have all the required tools installed on your local machine then continue with these steps.
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/swapnilsparsh/GIF-Discord-Bot.git
+
+# Enter into the directory
+cd "GIF Bot"
+
+# Install the dependencies
+npm install
+
+# Run the bot
+node bot.js
 ```
-$ npm install dotenv
-```
-
-2. Create `.env` file:
-
-```
-SERVERID=123456789
-CHANNELID=123456789
-TOKEN=123456789
-```
-
-3. Load environment variables using `dotenv` and `.env`:
-
-```javascript
-require('dotenv').config();
-const serverID = process.env.SERVERID;
-const channelID = process.env.CHANNELID;
-const TOKEN = process.env.TOKEN;
-```
-
-#### Made with ♥ by <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://swapnilsparsh.github.io/)
-
-<a href="https://github.com/swapnilsparsh" target="_blank">
-<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-</a>
-<a href="https://www.linkedin.com/in/swapnil-srivastava-sparsh/" target="_blank">
-<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a>
