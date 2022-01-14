@@ -1,6 +1,6 @@
 # GIF-Discord-Bot
 
-A simple discord bot that helps you send gif in your server using command `!gif cat`.
+A simple discord bot that helps you send gif in your server using command `!gif cat`
 
 ## Requirements
 
@@ -15,7 +15,15 @@ A simple discord bot that helps you send gif in your server using command `!gif 
 
 First, make sure you have all the required tools installed on your local machine then continue with these steps.
 
+### Invite bot to your server
+
+```
+https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot
+```
+
 ### Installation
+
+
 
 ```bash
 # Clone the repository
