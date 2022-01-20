@@ -2,7 +2,6 @@
 A simple discord bot that helps you send gif in your server using command `!gif` command
 
 ## Tech Stack
-- [React](https://reactjs.org/)
 - [Discord.js](https://discord.js.org/)
 
 ## Steps to create new bot 
