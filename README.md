@@ -1,40 +1,82 @@
 # GIF-Discord-Bot
+A simple discord bot that helps you send gif in your server using command `!gif` command
 
-A simple discord bot that helps you send gif in your server using command `!gif cat`
-
-## Requirements
-
-- [Node](https://nodejs.org/en/)
-- [NPM](https://www.npmjs.com/)
-
-## Tech used
+## Tech Stack
 - [React](https://reactjs.org/)
 - [Discord.js](https://discord.js.org/)
 
-## Getting started
+## Steps to create new bot 
 
-First, make sure you have all the required tools installed on your local machine then continue with these steps.
-
-### Invite bot to your server
+1. Create node project and install discord.js module.
 
 ```
-https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot
+$ npm init
+$ npm install discord.js
 ```
 
-### Installation
+2. [Create an application](https://discord.com/developers/applications/) - optionally set name, description, avatar.
 
+3. Select Bot from left navigation and "Add Bot" - set name and icon.
 
+4. Add bot to the your server with the url: `https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot`
 
-```bash
-# Clone the repository
-git clone https://github.com/swapnilsparsh/GIF-Discord-Bot.git
+5. Write the code!
 
-# Enter into the directory
-cd "GIF Bot"
-
-# Install the dependencies
-npm install
-
-# Run the bot
-node bot.js
+Login to bot account:
+```javascript
+const Discord = require('discord.js');
+const client = new Discord.Client();
+client.login('YOUR BOT TOKEN');
 ```
+
+Callback for when the bot is connected and ready:
+```javascript
+client.once('ready', () => {
+  console.log('Ready!');
+});
+```
+
+Callback for when a message is posted:
+```javascript
+client.on('message', gotMessage);
+
+function gotMessage(msg) {
+  console.log(msg.content);
+}
+```
+
+9. Run the bot!
+
+```
+$ node index.js
+```
+
+## Store token and other secrets in .env file.
+
+1. Install [dotenv package](https://www.npmjs.com/package/dotenv).
+```
+$ npm install dotenv
+```
+
+2. Create `.env` file (get reference from .env.example file):
+
+```
+BOT_TOKEN=123456789
+CHANNEL_TOKEN=123456789
+API_KEY=123456789
+```
+
+
+## License
+
+This project follows the [MIT License](/LICENSE).
+
+#### Made with ♥ by <a href="https://swapnilsparsh.github.io/">Swapnil Srivastava</a>
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://swapnilsparsh.github.io/)
+
+<a href="https://github.com/swapnilsparsh" target="_blank">
+<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
+</a>
+<a href="https://www.linkedin.com/in/swapnil-srivastava-sparsh/" target="_blank">
+<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
+</a>
